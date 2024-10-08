@@ -88,7 +88,7 @@ Text to analyze:
     
     try:
         completion = client.chat.completions.create(
-            model="gpt-4",
+            model="gpt-4o",
             messages=[
                 {"role": "system", "content": "You are an AI assistant that determines text relevance."},
                 {"role": "user", "content": prompt}
@@ -125,7 +125,7 @@ Ensure that the cards cover key concepts and important details. The cards should
 """
     try:
         completion = client.chat.completions.create(
-            model="gpt-4",
+            model="gpt-4o",
             messages=[
                 {"role": "system", "content": "You are an assistant that creates Anki flashcards."},
                 {"role": "user", "content": prompt}
